@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+       * {
+           border: 1px solid black;
+           padding: 10px;
+              }
+
+        .box_header{
+                    display: flex;
+                               background-color: #FFE082;
+        }
+        .box_text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box_user{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .box_menu{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box_main_menu{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box_header">
+        <div class="box_logo">로고사진</div>
+        <div class="box_text">
+            <div class="box_user">
+                <div class="login">로그인</div>
+                <div class="join">조인</div>
+            </div>
+            <div class="box_menu">
+                <div class="box_main_menu">
+                    <div class="introduce">홈페이지 소개</div>
+                    <div class="preview">둘러보기</div>
+                    <div class="board">게시판</div>
+                </div>
+                <div class="box_search">검색</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
