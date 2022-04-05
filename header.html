@@ -6,33 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <style>
-       * {
-           border: 1px solid black;
-           padding: 10px;
-              }
 
         .box_header{
-                    display: flex;
-                               background-color: #FFE082;
+                       border: 1px solid black;
+            width: 100%;
+    height: 250px;
+    background-color: #FFE082;
+    display: flex;
+    flex-direction: row;
+        }
+        .box_logo{
+                       border: 1px solid black;
+            background-image: url("images/logo.png");
+    background-size: cover;
+            background-position: center;
+    width: 15%;
+    height: 250px;
         }
         .box_text{
+                       border: 1px solid black;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 85%;
         }
 
         .box_user{
+                       border: 1px solid black;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-        }
+               }
 
         .box_menu{
+                       border: 1px solid black;
             display: flex;
             justify-content: space-between;
-        }
+                 }
 
         .box_main_menu{
+               border: 1px solid black;
             display: flex;
             flex-direction: row;
         }
@@ -41,7 +54,7 @@
 </head>
 <body>
     <div class="box_header">
-        <div class="box_logo">로고사진</div>
+        <div class="box_logo"></div>
         <div class="box_text">
             <div class="box_user">
                 <div class="login">로그인</div>
@@ -49,7 +62,7 @@
             </div>
             <div class="box_menu">
                 <div class="box_main_menu">
-                    <div class="introduce">홈페이지 소개</div>
+                    <div class="introduce">홈페이지소개</div>
                     <div class="preview">둘러보기</div>
                     <div class="board">게시판</div>
                 </div>
