@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=uvmsqejhsq"></script>
+
+    <style>
+        .m_box_search_map{
+            background-color: rgb(112, 112, 233);
+            width: 300px;
+            height: 400px;
+        }
+
+        .m_flex{
+            display: flex;
+        }
+
+        .m_box_search_category{
+            justify-content: space-evenly;
+        }
+
+        .m_center_text{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body >
+    <div class="m_box_search_map">
+        <div class="m_center_text">
+            <div>
+                <h3>댕댕여지도 검색</h3>
+            </div>
+            <form >
+                <input class="form-control me-2" type="text" placeholder="주소 또는 명칭으로 검색하실 수 있습니다">
+              </form>
+            <div class="m_flex m_box_search_category">
+                <div>
+                    <div>이미지</div>
+                    <div>관광</div>
+                </div>
+                <div>
+                    <div>이미지</div>
+                    <div>숙박</div>
+                </div>
+                <div>
+                    <div>이미지</div>
+                    <div>식음료</div>
+                </div>
+                <div>
+                    <div>이미지</div>
+                    <div>체험</div>
+                </div>
+                <div>
+                    <div>이미지</div>
+                    <div>동물병원</div>
+                </div>
+            </div>
+        </div>
+        <div>주변 검색</div>
+    </div>
+</body>
