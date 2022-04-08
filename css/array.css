@@ -1,0 +1,11 @@
+.m_text_center{
+    text-align: center;
+}
+
+.m_arlign_center{
+    align-items: center;
+}
+
+.m_arilgn_left {
+    align-items: flex-start;
+}

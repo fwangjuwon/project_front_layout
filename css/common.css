@@ -1,0 +1,10 @@
+.txt_notice{
+    font-family: 'Do Hyeon', sans-serif;
+   }
+
+ /* a 태그 밑줄 없애기 + 색 */
+a {
+    text-decoration: none;
+    color: black;
+}
+

@@ -1,0 +1,40 @@
+/* 패딩 */
+.m_p_md{
+    padding: 20px;
+}
+
+.m_pl_md{
+    padding-left: 20px;
+}
+
+.m_pr_md{
+    padding-right: 20px;
+}
+
+.m_pt_md{
+    padding-top: 20px;
+}
+
+.m_pb_md{
+    padding-bottom: 20px;
+}
+/* 마진 */
+.m_m_md{
+    margin: 20px;
+}
+
+.m_ml_md{
+    margin-left: 20px;
+}
+
+.m_mr_md{
+    margin-right: 20px;
+}
+
+.m_mt_md{
+    margin-top: 20px;
+}
+
+.m_mb_md{
+    margin-bottom: 20px;
+}
