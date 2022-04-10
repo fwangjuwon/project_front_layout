@@ -1,10 +1,68 @@
-.txt_notice{
-    font-family: 'Do Hyeon', sans-serif;
-   }
+/* 폰트 */
 
- /* a 태그 밑줄 없애기 + 색 */
+.txt_notice {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+/* a 태그 밑줄 없애기 + 색 */
+
 a {
     text-decoration: none;
     color: black;
 }
 
+
+/* 라운드 박스 */
+
+.m_border_round {
+    border-radius: 10px;
+}
+
+
+/* 카테고리 알림 박스 */
+
+.m_box_notice_category {
+    padding: 40px;
+    background-color: #E1E2E1;
+    text-align: center;
+}
+
+
+/* 이미지 채우기 */
+
+.m_img_fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 이미지 래핑 */
+
+.m_outer_wrap {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.m_box_wrap {
+    width: 400px;
+}
+
+.m_img_wrap {
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+}
+
+
+/* 버튼 */
+
+.m_btn {
+    background-color: #E1E2E1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: right;
+}

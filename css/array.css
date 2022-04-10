@@ -1,11 +1,5 @@
-.m_text_center{
-    text-align: center;
-}
+/* 오른쪽 정렬 */
 
-.m_arlign_center{
-    align-items: center;
-}
-
-.m_arilgn_left {
-    align-items: flex-start;
+.m_right {
+    float: right;
 }
