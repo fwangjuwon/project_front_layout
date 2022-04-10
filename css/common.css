@@ -15,8 +15,17 @@ a {
 
 /* 라운드 박스 */
 
-.m_border_round {
+.m_box_md_round {
     border-radius: 10px;
+}
+
+.m_box_lg_round {
+    border-radius: 25px;
+}
+
+.m_box_lg_up_round {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 
@@ -48,7 +57,7 @@ a {
 }
 
 .m_box_wrap {
-    width: 400px;
+    width: 390px;
 }
 
 .m_img_wrap {

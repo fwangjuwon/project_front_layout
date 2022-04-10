@@ -34,17 +34,17 @@
 
 <body>
     <!-- 헤더 시작 -->
-    <nav class="navbar navbar-expand-sm m_bg_primary m_mb_md">
-        <ul class="navbar-nav  w-100 m_pl_md">
+    <nav class="navbar navbar-expand-sm m_bg_primary">
+        <ul class="navbar-nav w-100 m_pl_md">
             <!-- 로고 박스 시작 -->
-            <li class="nav-item col-1">
+            <li class="nav-item col-lg-2">
                 <a href="#">
-                    <img class="m_box_logo" src="images/logo.png" alt="로고">
+                    <img class="m_box_logo" src="/html/images/logo.png" alt="로고">
                 </a>
             </li>
-            <!-- 로고 박스 시작 -->
+            <!-- 로고 박스 끝 -->
             <!-- 메뉴 박스  시작-->
-            <div class="m_box_menu_header">
+            <div class="m_box_menu_header col-lg-10">
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="#">홈페이지 소개</a>
                 </li>
@@ -54,27 +54,25 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="#">게시판</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">지도</a>
+                </li>
+                <li class="nav-item">
+                    <div>
+                        <div class="m_box_login">
+                            <a href="">로그인</a>
+                            <a href="">회원가입</a>
+                        </div>
+                        <i id="btn-search" class="fa-solid fa-magnifying-glass m_box_search" style="cursor: pointer;"></i>
+                    </div>
+                </li>
             </div>
             <!-- 메뉴 박스  끝-->
-            <!-- 기능 박스  시작-->
-            <li class="col-2">
-                <div>
-                    <div class="m_box_login">
-                        <a href="">로그인</a>
-                        <a href="">회원가입</a>
-                    </div>
-                    <div class="m_box_search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-            </li>
-            <!-- 기능 박스  끝-->
         </ul>
     </nav>
     <!-- 헤더 끝 -->
-
     <!-- 상세보기 시작 -->
-    <div>
+    <div class="m_mt_md">
         <!-- 상세보기 메뉴 시작-->
         <div class="mx-auto w-50 m_pb_md ">
             <!-- 메뉴 박스 아우터 시작-->
@@ -103,7 +101,7 @@
             <!-- 이미지 박스 시작-->
             <div class="col-lg-6 m_mt_lg">
                 <div class="m_box_profile">
-                    <img class="m_img_profile" src="images/cat.jpg" alt="프로필 이미지">
+                    <img class="m_img_profile" src="/html/images/cat.jpg" alt="프로필 이미지">
                 </div>
             </div>
             <!-- 이미지 박스 끝-->
