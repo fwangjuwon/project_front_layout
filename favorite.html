@@ -29,7 +29,7 @@
 </head>
 <body>
 <br>
-  <h1 class="text-center txt_top">내가 찜한 여행지</h1>
+  <h1 class="text-center txt_top">내가 찜한 장소</h1>
   <br><hr><br>
   
     <div class="container" style="padding-top: 20px">
@@ -44,8 +44,18 @@
       </ul>
       <form class="navbar-form navbar-right" role="search">
               <div class="form-group d-flex">
-                <input  type="text" class="form-control" placeholder="Search">          
-                <button type="submit" class="btn" style="width: 100px;">검색</button>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  카테고리
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">숙박지</a></li>
+                    <li><a class="dropdown-item" href="#">식음료</a></li>
+                    <li><a class="dropdown-item" href="#">관광지</a></li>
+                    <li><a class="dropdown-item" href="#">체험</a></li>
+                    <li><a class="dropdown-item" href="#">동물병원</a></li>
+                  </ul>
+                </div>
             </div>
       </form>
 

@@ -29,7 +29,7 @@
 </head>
 <body>
 <br>
-  <h1 class="text-center txt_top">place</h1>
+  <h1 class="text-center txt_top">내가 좋아요한 글</h1>
   <br><hr><br>
   
     <div class="container" style="padding-top: 20px">
@@ -44,8 +44,19 @@
       </ul>
       <form class="navbar-form navbar-right" role="search">
               <div class="form-group d-flex">
-                <input  type="text" class="form-control" placeholder="Search">          
-                <button type="submit" class="btn" style="width: 100px;">검색</button>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  카테고리
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">댕냥이자랑</a></li>
+                    <li><a class="dropdown-item" href="#">숙박지</a></li>
+                    <li><a class="dropdown-item" href="#">식음료</a></li>
+                    <li><a class="dropdown-item" href="#">관광지</a></li>
+                    <li><a class="dropdown-item" href="#">체험</a></li>
+                    <li><a class="dropdown-item" href="#">동물병원</a></li>
+                  </ul>
+                </div>
             </div>
       </form>
 
@@ -150,50 +161,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-                    <a href="#">
-              <img class="box_image" src="images/cat.jpg">
-              </a>
-              <div class="caption">
-                <div class="txt_main">이름</div>
-                                 <div class="txt_main">주소</div>
-              </div>
-          </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="thumbnail">
-                  <a href="#">
-            <img class="box_image" src="images/cat.jpg">
-            </a>
-            <div class="caption">
-              <div class="txt_main">이름</div>
-                               <div class="txt_main">주소</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-                <a href="#">
-          <img class="box_image" src="images/cat.jpg">
-          </a>
-          <div class="caption">
-            <div class="txt_main">이름</div>
-                             <div class="txt_main">주소</div>
-          </div>
-      </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-              <a href="#">
-        <img class="box_image" src="images/cat.jpg">
-        </a>
-        <div class="caption">
-          <div class="txt_main">이름</div>
-                           <div class="txt_main">주소</div>
-        </div>
-    </div>
-</div>
     </div>
 </div>
 </body>
