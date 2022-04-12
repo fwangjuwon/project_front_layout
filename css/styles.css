@@ -10,13 +10,14 @@
 
 /* 헤더 박스 */
 
-.m_box_menu_header {
+.m_outer_menu_header {
     display: flex;
-    justify-content: space-between;
-    font-size: xx-large;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: x-large;
     align-items: center;
-}
 
+}
 
 /* 로고 박스 */
 
@@ -32,11 +33,9 @@
 /* 로그인 회원가입 박스 */
 
 .m_box_login {
-    text-align: center;
     font-size: medium;
     position: relative;
     bottom: 10px;
-    right: 40px;
 }
 
 
@@ -45,16 +44,17 @@
 .m_box_search {
     text-align: center;
     position: relative;
+    left: 30px;
 }
 
 
 /* 검색 버튼 */
 
 .m_btn_search {
-    height: 80px;
+    height: 60px;
     width: 100px;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: #FFDEA0;
 }
 
@@ -62,7 +62,7 @@
 /* 검색창 박스 */
 
 .m_box_input_search {
-    height: 80px;
+    height: 60px;
     border: 1px solid blue;
     border-radius: 3px;
     font-size: xx-large;
@@ -140,7 +140,7 @@
 }
 
 #panel {
-    padding: 40px;
+    padding: 30px;
     display: none;
     justify-content: center;
 }
@@ -223,6 +223,6 @@
 
 .m_box_search_place {
     width: 90%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
