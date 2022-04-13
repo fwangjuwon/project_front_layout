@@ -42,6 +42,7 @@
                 고양이 사진 <br>
                 강아지 사진 <br>
                 내용내용내용content내용
+
               </p>
             </div>
             <br>
@@ -55,10 +56,32 @@
             </div>
             <br>
 
-            <button style="background-color: #E1E2E1; float: right;" type="submit" class="btn">목록으로</button>
+            <button style="background-color: #E1E2E1; float: right; margin: 10px;" type="submit"
+              class="btn">목록으로</button>
+            <!-- {{#auth}} -->
+            <button style="background-color: #E1E2E1; float: right; margin: 10px;" type="submit" class="btn">삭제</button>
+            <button style="background-color: #E1E2E1; float: right; margin: 10px;" type="submit" class="btn">수정</button>
+            <!-- {{/auth}} -->
             <br><br><br>
 
             <!-- 댓글 시작 -->
+
+
+            <div class="card mb-2">
+              <div class="card-header bg-light">
+                <i class="fa fa-comment fa"></i> COMMENT
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button style="float:right; " type="button" class="btn btn-dark mt-3"
+                      onClick="javascript:addReply();">post reply</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br />
             <div class="card">
               <div class="card-header"><i class="fa fa-comment fa"></i> COMMENT LIST</div>
               <ul id="reply-box" class="list-group">
@@ -73,28 +96,11 @@
                   </div>
                 </li>
                 <!-- {{/comments}} -->
-                <br />
               </ul>
             </div>
-
-            <div class="card mb-2">
-              <div class="card-header bg-light">
-                <i class="fa fa-comment fa"></i> COMMENT
-              </div>
-              <div class="card-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <button type="button" class="btn btn-dark mt-3" onClick="javascript:addReply();">post reply</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <br>
             <!-- 댓글 끝 -->
-            <!-- {{#auth}} -->
-            <button style="background-color: #E1E2E1; float: right; margin: 10px;" type="submit" class="btn">삭제</button>
-            <button style="background-color: #E1E2E1; float: right; margin: 10px;" type="submit" class="btn">수정</button>
-            <!-- {{/auth}} -->
+
           </div>
         </div>
         <nav>
@@ -113,6 +119,20 @@
     $('.active').removeClass('active');
     $(this).addClass('active');
   });
+
+     async function deleteComment(commentId) {
+        let response = await fetch(`/s/api/comment/${commentId}`, {
+            method: "DELETE"
+        });
+        let responseParse = await response.json();
+        if (responseParse.code == 1) {
+            alert("삭제 성공");
+            location.reload(); // ajax + ssr
+        } else {
+            alert("삭제 실패");
+        }
+    }
+
 </script> -->
 
 </html>
