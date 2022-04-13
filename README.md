@@ -11,4 +11,9 @@
 - 폰트 생각해볼것 (종류, 크기, 색상 등) -> font 2가지 완료 (@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Poor+Story&display=swap');)
 - 내가 쓴 댓글, 좋아요한 글, 즐겨찾기한 포스트 페이지 완료
 - 아이디찾기, 비밀번호 찾기 로그인 페이지에서 팝업창으로 띄우기 완료
+- 댕냥이자랑 게시글 상세보기 완료 -> 좋아요 버튼은 완료/ 기능은 미완료
+
+
+- 페이지네이션 추가해야함 (place, 댕냥이자랑, 공지사항 게시판)
+- place 상세페이지 
 
