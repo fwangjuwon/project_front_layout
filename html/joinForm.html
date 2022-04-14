@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blogproject - v2</title>
+    <title>회원가입</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 부트스트랩추가 -->
@@ -11,43 +11,37 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-
-
-<body>
-
-    <div class="w-50 mx-auto">
-        <div class="m_box_notice_category">
-            <h1>회원가입</h1>
+<div class="container">
+    <div class="container mt-3 m_container" style="width: 900px;">
+        <div class="mt-4 p-5 text-black rounded m_bg_secondary">
+            <div class="m_txt_title text-center m_font_xxl">회원가입</div>
         </div>
-
-
-        <!-- 컨테이너 시작 -->
-        <div class="m_mt_md">
-
-            <!-- 회원가입 폼 시작 -->
-            <form>
-                <div class="m_mb_md ">
-                    <input id="username" type="text" class="form-control m_ph_md" placeholder="Enter username" required maxlength="12">
-                </div>
-                <div class="m_mb_md">
-                    <input id="password" type="password" class="form-control m_ph_md" placeholder="Enter password" required maxlength="12">
-                </div>
-                <div class="m_mb_md">
-                    <input id="phone" type="text" class="form-control m_ph_md" placeholder="Enter phonenumber" required maxlength="30">
-                </div>
-                <div class="m_mb_md">
-                    <input id="email" type="email" class="form-control m_ph_md" placeholder="Enter email" required maxlength="30">
-                </div>
-                <div class="m_mb_md">
-                    <input id="addr" type="text" class="form-control m_ph_md" placeholder="Enter addr" required maxlength="300">
-                </div>
-                <button class="btn m_bg_secondary m_right" type="button">완료</button>
-            </form>
-            <!-- 회원가입 폼 끝 -->
-
-        </div>
-
-        <!-- 컨테이너 끝 -->
     </div>
+    <br>
 
-</body>
+    <div class="my_auth_box">
+        <div class="my_auth_form_box">
+            <div class="my_error_box my_hidden">
+            </div>
+            <form action="/join" method="post" onsubmit="return validation()">
+                <input id="username" class="my_auth_form_box_input" type="text" name="username" placeholder="Enter ID"
+                    maxlength="20" required />
+                <input id="password" class="my_auth_form_box_input" type="password" name="password"
+                    placeholder="Enter PASSWORD" maxlength="20" required />
+                <input id="same-password" class="my_auth_form_box_input" type="password" name=""
+                    placeholder="Check PASSWORD" maxlength="20" required />
+                <input class="my_auth_form_box_input" type="text" name="phonenumber" placeholder="Enter PHONENUMBER"
+                    maxlength="20" required />
+                <input class="my_auth_form_box_input" type="email" name="email" placeholder="Enter EMAIL" maxlength="60"
+                    required />
+                <input class="my_auth_form_box_input" type="text" name="addr" placeholder="Enter ADDRESS"
+                    maxlength="100" required />
+                <button type="submit" style="background-color: #E1E2E1; float: right; margin-top: 20px;"
+                    class="btn">회원가입</button>
+            </form>
+
+        </div>
+    </div>
+    <br />
+</div>
+<script src="/js/joinform.js"></script>

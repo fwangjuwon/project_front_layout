@@ -18,7 +18,7 @@
         var locationBtnHtml = ` <div class="m_box_search_map">
         <div class="text-center m_bg_secondary m_box_lg_up_round" style="border-top-right-radius: 25px;">
             <div class="m_ph_sm">
-                <h3>검색</h3>
+                <h3 class="m_txt_title">검색</h3>
             </div>
             <form class="container">
                 <input class="form-control m_ph_sm" type="text" placeholder="주소 또는 명칭으로 검색하실 수 있습니다">
@@ -57,27 +57,27 @@
             </div>
         </div>
         <div class = "m_box_check_category">
-            <div class="m_pl_sm hr-sect">주변 탐색</div>
+            <div class="m_pl_sm hr-sect m_txt_lg m_txt_title">주변 탐색</div>
             <div class="m_pl_md" >
                 <div class="form-check m_pb_sm">
                     <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
-                    <label class="form-check-label">관광지</label>
+                    <label class="form-check-label m_font_lg">관광지</label>
                 </div>
                 <div class="form-check m_pb_sm">
                     <input class="form-check-input" type="checkbox" id="check1" name="option2" value="something" checked>
-                    <label class="form-check-label">숙박</label>
+                    <label class="form-check-label m_font_lg">숙박</label>
                 </div>
                 <div class="form-check m_pb_sm">
                     <input class="form-check-input" type="checkbox" id="check1" name="option3" value="something" checked>
-                    <label class="form-check-label">식음료</label>
+                    <label class="form-check-label m_font_lg">식음료</label>
                 </div>
                 <div class="form-check m_pb_sm">
                     <input class="form-check-input" type="checkbox" id="check1" name="option4" value="something" checked>
-                    <label class="form-check-label">체험</label>
+                    <label class="form-check-label m_font_lg">체험</label>
                 </div>
                 <div class="form-check m_pb_sm">
                     <input class="form-check-input" type="checkbox" id="check1" name="option5" value="something" checked>
-                    <label class="form-check-label">동물병원</label>
+                    <label class="form-check-label m_font_lg">동물병원</label>
                 </div>
             </div>
         </div>
