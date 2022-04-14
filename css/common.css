@@ -8,6 +8,10 @@
     font-family: 'Poor Story', cursive;
 }
 
+.m_txt_main{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
 /* a 태그 밑줄 없애기 + 색 */
 
 a {
