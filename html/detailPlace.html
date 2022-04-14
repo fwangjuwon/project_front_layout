@@ -11,6 +11,9 @@
     <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/6b3377d2bb.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 머테리얼 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/styles.css">
 
     <style>
@@ -78,19 +81,86 @@
         <div class="m_btn_search">검색</div>
     </div>
 
-    <div>
-        <div></div>
-        <div></div>
-        <hr/>
-        <div> <!--플렉스 필요-->
-            <div></div>
-            <div></div>
+    <div class="container">
+        <div>카테고리분류박스</div>
+        <div>카테고리이름</div>
+        <hr class="m_mh_md"/>
+        <div class="d-flex">
+            <div class="col-lg-6" style="margin: 40px;">
+                <img class="m_img_fit" style="width: 300px;" src="/html/images/cat.jpg" alt="#">
+            </div>
+            <div class="col-lg-6" style="border: 1px solid black; width: 300px">
+                <div style="position: relative" > <!-- position : relative-->
+                    <div class="d-flex" style="position: absolute; left: 220px; top: -10px"> <!-- position : absolute (좋아요,즐겨찾기,설정)-->
+                        <div style="width: 30px; border: 1px solid black; border-radius: 25px">
+                            <i class="large material-icons">favorite_border</i>
+                        </div>
+                        <div>
+                            <i class="large material-icons">star_border</i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+
+                        <div class="m_ph_sm">타이틀</div>
+                        <div class="m_ph_sm d-flex">
+                            <div>주소</div>
+                            <div class="m_pl_sm">설명</div>
+                        </div>
+                        <div class="m_ph_sm d-flex">
+                            <div>문의</div>
+                            <div class="m_pl_sm">설명</div>
+                        </div>
+                        <div class="m_ph_sm d-flex">
+                            <div>이용시간</div>
+                            <div class="m_pl_sm">설명</div>
+                        </div>
+                        <div class="m_ph_sm d-flex">
+                            <div>홈페이지</div>
+                            <div class="m_pl_sm">설명</div>
+                        </div>
+                        <div class="m_ph_sm d-flex">
+                            <div>키워드</div>
+                            <div class="m_pl_sm">설명</div>
+                        </div>
+                     
+    
+                </div>
+                <div class="d-flex"> <!-- 여러개인경우 슬라이드?-->
+                    <div>
+                        <i class="fa-solid fa-shower"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-weight-scale"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div> <!-- 여기서부터 같은 박스 7개-->
-            <div>소개</div>
-            <hr/>
-            <div>설명</div>
-        </div> 
+        <div>
+            <div class="m_pt_lg"> <!-- 여기서부터 같은 박스 7개-->
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-paw"></i></div>
+                    <div class="m_pl_md">소개</div>
+                </div>
+                <hr/>
+                <div>설명</div>
+            </div> 
+            <div class="m_pt_lg"> <!-- 여기서부터 같은 박스 7개-->
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-paw"></i></div>
+                    <div class="m_pl_md">주요시설</div>
+                </div>
+                <hr/>
+                <div>설명</div>
+            </div> 
+        </div>
     </div>
 
       <!-- 푸터 시작 -->
