@@ -82,63 +82,68 @@
     </nav>
     <!-- 헤더 끝 -->
 
+
     <div id="panel">
         <input type="text" class="m_box_input_search" placeholder="검색어를 입력해주세요">
         <div class="m_btn_search">검색</div>
     </div>
 
     <div class="container">
+
         <div class="m_ph_md">
 
-        </div>
-        <div class="text-center">카테고리이름</div>
-
-        <div class="mx-auto m_mh_md">
             <!-- 메뉴 박스 아우터 시작-->
-            <div class="m_outer_menu_detail">
+            <div class="m_outer_menu_detail" style="margin-bottom: 80px; margin-top: 30px;">
                 <!-- 메뉴 박스 시작 -->
-                <div class="m_box_menu_detail bg-warning">
-                    <a href="#">관광지</a>
+                <div class="m_box_menu_detail m_bg_primary">
+                    <a href="spotlist.html" class="m_txt_title">관광지</a>
                 </div>
-                <div class=" m_box_menu_detail m_bg_inactive">
-                    <a href="#">숙박</a>
+                <div class=" m_box_menu_detail m_bg_secondary">
+                    <a href="hotellist.html" class="m_txt_title">숙박</a>
                 </div>
-                <div class="m_box_menu_detail m_bg_inactive">
-                    <a href="#">식음료</a>
+                <div class="m_box_menu_detail m_bg_secondary">
+                    <a href="cafelist.html" class="m_txt_title">식음료</a>
                 </div>
-                <div class="m_box_menu_detail m_bg_inactive">
-                    <a href="#">체험</a>
+                <div class="m_box_menu_detail m_bg_secondary">
+                    <a href="playlist.html" class="m_txt_title">체험</a>
                 </div>
-                <div class="m_box_menu_detail m_bg_inactive">
-                    <a href="#">동물병원</a>
+                <div class="m_box_menu_detail m_bg_secondary">
+                    <a href="hospitallist.html" class="m_txt_title">동물병원</a>
                 </div>
                 <!-- 메뉴 박스  끝-->
             </div>
 
+        </div>
+
+        <h2 class="text-center m_txt_title ">{{카테고리이름}}</h2>
+        <hr>
+        <div class="mx-auto m_mh_md">
+
             <div class="d-flex m_pt_lg " style="justify-content: space-evenly; align-items: center ">
                 <div class="col-lg-6" style="height: 100%;">
                     <div id="demo" class="carousel slide container" style="width: 100%;" data-bs-ride="carousel">
+
                         <!-- The slideshow/carousel -->
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="2000">
                                 <img style=" border-radius: 25px; object-fit:cover; width: 100%; height:400px"
-                                    src="images/activity.jpg" alt="#" class="m_box_img_slide">
+                                    src="images/petexperience.jpg" alt="#" class="m_box_img_slide">
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img style=" border-radius: 25px; object-fit:cover; width: 100%; height:400px"
-                                    src="images/experience.jpg" alt="#" class="m_box_img_slide">
+                                    src="images/petcafe.jpg" alt="#" class="m_box_img_slide">
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img style=" border-radius: 25px; object-fit:cover; width: 100%; height:400px"
-                                    src="images/hotel.jpg" alt="#" class="m_box_img_slide">
+                                    src="images/pethotel.jpg" alt="#" class="m_box_img_slide">
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
                                 <img style=" border-radius: 25px; object-fit:cover; width: 100%; height:400px"
-                                    src="images/cafe.jpg" alt="#" class="m_box_img_slide">
+                                    src="images/petclinic.jpg" alt="#" class="m_box_img_slide">
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
                                 <img style=" border-radius: 25px; object-fit:cover; width: 100%; height:400px"
-                                    src="images/hospital.jpg" alt="#" class="m_box_img_slide">
+                                    src="images/petoutdoor.jpg" alt="#" class="m_box_img_slide">
                             </div>
                         </div>
                         <!-- Left and right controls/icons -->
@@ -151,77 +156,105 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- 좋아요,즐찾버튼 시작 -->
                 <div class="m_bg_primary col-lg-5 d-flex" style=" border-radius: 25px;  padding: 20px">
                     <div style="position: relative;">
                         <div class="d-flex" style="position: absolute; left: 350px; top: -35px">
                             <div class="d-flex bg-light"
-                                style="width: 35px; height:35px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
+                                style="width: 40px; height:40px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
                                 <i class="large material-icons">favorite_border</i>
                             </div>
                             <div class="d-flex bg-light m_ml_sm"
-                                style="width: 35px; height:35px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
+                                style="width: 40px; height:40px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
                                 <i class="large material-icons">star_border</i>
                             </div>
                             <div class="d-flex bg-light m_ml_sm"
-                                style="width: 35px; height:35px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
+                                style="width: 40px; height:40px;  justify-content: center; align-items: center;  border-radius: 25px; box-shadow: 0px 0px 3px 0px rgb(110, 105, 105) inset">
                                 <i class="fa-solid fa-gear"></i>
                             </div>
                         </div>
+                        <!-- 좋아요, 즐찾버튼 끝 -->
 
-                        <div class="m_ph_sm">타이틀</div>
+                        <div class="m_ph_sm m_txt_title m_font_xxl">{{category.name}}</div>
                         <div class="m_ph_sm d-flex">
-                            <div>주소</div>
+                            <div class="m_txt_title m_font_xl">주소</div>
                             <div class="m_pl_sm">설명</div>
                         </div>
                         <div class="m_ph_sm d-flex">
-                            <div>문의</div>
+                            <div class="m_txt_title m_font_xl">문의처</div>
+                            <div class="m_pl_sm">전화번호</div>
+                        </div>
+                        <div class="m_ph_sm d-flex">
+                            <div class="m_txt_title m_font_xl">이용시간</div>
                             <div class="m_pl_sm">설명</div>
                         </div>
                         <div class="m_ph_sm d-flex">
-                            <div>이용시간</div>
+                            <div class="m_txt_title m_font_xl">홈페이지</div>
                             <div class="m_pl_sm">설명</div>
                         </div>
                         <div class="m_ph_sm d-flex">
-                            <div>홈페이지</div>
-                            <div class="m_pl_sm">설명</div>
+                            <div class="m_txt_title m_font_xl">연관키워드</div>
+                            <div class="m_pl_sm">#키워드 #키워드</div>
                         </div>
-                        <div class="m_ph_sm d-flex">
-                            <div>키워드</div>
-                            <div class="m_pl_sm">설명</div>
-                        </div>
+
 
                         <div class="m_ph_sm d-flex">
                             <!-- 여러개인경우 슬라이드?-->
                             <div class="d-flex bg-light m_ml_sm"
-                                style="flex-direction:column; border: 1px solid GRAY; border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
-                                <i class="fa-solid fa-shower m_pb_sm"></i>
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/shower.png" style="width: 50px; height: 50px;">
                                 <div style="font-size: small;">목욕가능</div>
                             </div>
                             <div class="d-flex bg-light m_ml_sm"
-                                style="flex-direction:column; border: 1px solid GRAY; border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
-                                <i class="fa-solid fa-square-parking m_pb_sm"></i>
-                                <div style="font-size: small;">주차가능</div>
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/parking.png" style="width: 50px; height: 50px;">
+                                <div style="font-size: small;">주차</div>
                             </div>
                             <div class="d-flex bg-light m_ml_sm"
-                                style="flex-direction:column; border: 1px solid GRAY; border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
-                                <i class="fa-solid fa-sack-dollar m_pb_sm"></i>
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/entrancefee.png" style="width: 50px; height: 50px;">
                                 <div style="font-size: small;">유료</div>
                             </div>
                             <div class="d-flex bg-light m_ml_sm"
-                                style="flex-direction:column; border: 1px solid GRAY; border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
-                                <i class="fa-solid fa-weight-scale m_pb_sm"></i>
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/limitweight.png" style="width: 50px; height: 50px;">
                                 <div style="font-size: small;">무게제한</div>
                             </div>
+                            <div class="d-flex bg-light m_ml_sm"
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/emergency.png" style="width: 50px; height: 50px;">
+                                <div style="font-size: small;">응급수칙</div>
+                            </div>
+                            <div class="d-flex bg-light m_ml_sm"
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/inventory.png" style="width: 50px; height: 50px;">
+                                <div style="font-size: small;">비품제공</div>
+                            </div>
+                            <div class="d-flex bg-light m_ml_sm"
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/outdoor.png" style="width: 50px; height: 50px;">
+                                <div style="font-size: small;">실외</div>
+                            </div>
+                            <div class="d-flex bg-light m_ml_sm"
+                                style="flex-direction:column;  border-radius: 10px; width:80px; height:80px; justify-content: center; align-items: center; padding:10px">
+                                <img src="images/petrestaurant.png" style="width: 50px; height: 50px;">
+                                <div style="font-size: small;">펫 식당</div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div>
+
                 <div class="m_pt_lg">
                     <!-- 여기서부터 같은 박스 7개-->
                     <div class="d-flex">
-                        <div><i class="fa-solid fa-paw"></i></div>
-                        <div class="m_pl_md">소개</div>
+                        <div>
+                            <img src="images/pet.png" style="width: 25px; height: 25px;" alt="">
+                        </div>
+                        <div class="m_pl_md m_txt_title m_font_xl">소개</div>
                     </div>
                     <hr />
                     <div>설명</div>
@@ -229,8 +262,9 @@
                 <div class="m_pt_lg">
                     <!-- 여기서부터 같은 박스 7개-->
                     <div class="d-flex">
-                        <div><i class="fa-solid fa-paw"></i></div>
-                        <div class="m_pl_md">주요시설</div>
+                        <div> <img src="images/pet.png" style="width: 25px; height: 25px;" alt="">
+                        </div>
+                        <div class="m_pl_md m_txt_title m_font_xl">주요시설</div>
                     </div>
                     <hr />
                     <div>설명</div>
@@ -238,8 +272,9 @@
                 <div class="m_pt_lg">
                     <!-- 여기서부터 같은 박스 7개-->
                     <div class="d-flex">
-                        <div><i class="fa-solid fa-paw"></i></div>
-                        <div class="m_pl_md">지도</div>
+                        <div> <img src="images/pet.png" style="width: 25px; height: 25px;" alt="">
+                        </div>
+                        <div class="m_pl_md m_txt_title m_font_xl">지도</div>
                     </div>
                     <hr />
                     <div id="map" style="width:100%;height:300px;"></div>

@@ -187,13 +187,14 @@
 
     <div id="mytabs">
       <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link active" data-toggle="tab">숙박</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="tab">식음료</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="tab">관광지</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="tab">체험</a></li>
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#hotel">숙박</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cafe">식음료</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#trip">관광지</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#play">체험</a></li>
       </ul>
+
       <div class="tab-content">
-        <div class="tab-pane fade show active d-flex" style="justify-content: space-around;">
+        <div class="tab-pane fade show active d-flex" style="justify-content: space-around;" id="hotel">
 
           <div class="col-md-3">
             <div class="thumbnail">
@@ -203,10 +204,10 @@
               <div class="caption">
                 <div class="m_font_lg m_font_bold">이름</div>
                 <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
-
               </div>
             </div>
           </div>
+
           <div class="col-md-3">
             <div class="thumbnail">
               <a href="#">
@@ -215,10 +216,10 @@
               <div class="caption">
                 <div class="m_font_lg m_font_bold">이름</div>
                 <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
-
               </div>
             </div>
           </div>
+
           <div class="col-md-3">
             <div class="thumbnail">
               <a href="#">
@@ -227,15 +228,55 @@
               <div class="caption">
                 <div class="m_font_lg m_font_bold">이름</div>
                 <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
-
               </div>
             </div>
           </div>
+
         </div>
-        <div class="tab-pane fade">내용2</div>
-        <div class="tab-pane fade">내용3</div>
+
+
+        <div class="tab-pane fade d-flex" id="cafe">
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <a href="#">
+                <img class="m_img_fit m_mt_md" src="images/cat.jpg">
+              </a>
+              <div class="caption">
+                <div class="m_font_lg m_font_bold">이름</div>
+                <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <a href="#">
+                <img class="m_img_fit m_mt_md" src="images/cat.jpg">
+              </a>
+              <div class="caption">
+                <div class="m_font_lg m_font_bold">이름</div>
+                <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <a href="#">
+                <img class="m_img_fit m_mt_md" src="images/cat.jpg">
+              </a>
+              <div class="caption">
+                <div class="m_font_lg m_font_bold">이름</div>
+                <div class=""><i class="fa-solid fa-location-dot"></i>주소</div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- 좋아요 박스 끝 -->
